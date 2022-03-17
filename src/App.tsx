@@ -4,24 +4,10 @@ import './App.css';
 
 import { RedocStandalone } from 'redoc';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <RedocStandalone specUrl="https://redocly.github.io/redoc/openapi.yaml" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RedocStandalone options={{hideDownloadButton: true}} specUrl="https://redocly.github.io/redoc/openapi.yaml" />
     </div>
   );
 }
