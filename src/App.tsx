@@ -7,7 +7,7 @@ import { RedocStandalone } from 'redoc';
 const App = () => {
   return (
     <div className="App">
-      <RedocStandalone options={{hideDownloadButton: true}} specUrl="https://redocly.github.io/redoc/openapi.yaml" />
+      <RedocStandalone options={{hideDownloadButton: true}} specUrl="https://eiffel-back.aws-test.paris.cl/api-json" />
     </div>
   );
 }
